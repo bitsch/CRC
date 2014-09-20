@@ -1,4 +1,4 @@
 CRC
 ===
 
-cyclic redundancy test
+cyclic redundancy chaeck(error in transmission! i better get it checked)
