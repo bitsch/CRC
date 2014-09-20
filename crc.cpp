@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cstring>
+#include<cstdlib>
 using namespace std;
 void divide(int n,int d,char div[], char code[])
 {
@@ -37,6 +38,11 @@ int main()
 	cout<<"\n enter the bits:";
 	for(int i=0;i<n;i++)
 	cin>>data[i];
+	if(data[0]=='0')
+	{
+		cout<<"\n invalid data!! retry";
+		exit(0);
+	}
 	cout<<"\n enter the number of bits in divisor:";
 	cin>>d;
 	char div[d];
@@ -44,6 +50,11 @@ int main()
 	cout<<"\n enter the divisor:";
 	for(int i=0;i<d;i++)
 	cin>>div[i];
+	if(div[0]=='0')
+	{
+		cout<<"\n invalid data!! retry";
+		exit(0);
+	}
 	for(int i=0;i<sizeof(code);i++)
 	{
 		if(i<n)
